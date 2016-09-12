@@ -4,6 +4,15 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="tools/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="tools/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="tools/jquery.fullPage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#pwl_page').fullpage()
+			})
+		</script>
 	</head>
 	<body>
 		<!--头部-->
@@ -27,6 +36,10 @@
 				</ul>
 			</nav>	
 		</header>
-		
+		<div id="pwl_page">
+			<div class="section pwl-page1">1</div>
+			<div class="section pwl-page2">2</div>
+			<div class="section pwl-page3">3</div>
+		</div>
 	</body>
 </html>

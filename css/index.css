@@ -1,4 +1,4 @@
-@charset "utf-8";
+/*@charset "utf-8";
 html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
 	margin: 0;
 	padding: 0;
@@ -9,19 +9,23 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
-}
+}*/
 
 body{
-	background: url(../images/background.jpg);
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
-/*顶部透明导航栏*/
+/*header*/
 header#header{
-	position: relative;
+	position: absolute;	
+	z-index: 99;
+	width: 100%;
 }
 
 #header_background{
-	width: 100%;
+	
 	height: 75px;
 	background-color: gainsboro;
 	opacity: 0.7;
@@ -43,7 +47,7 @@ header#header{
 	float: left;
 }
 
-/*logo旁class*/
+/*logo—class*/
 #web_Class{
 	float: left;
 	margin-left: 15px;
@@ -65,11 +69,11 @@ header#header{
 }
 
 
-/*导航*/
+/*nav*/
 nav#nav{
 	float: right;
 	position: relative;
-	bottom: 45px;
+	bottom: 63px;
 	right: 40px;
 }
 nav#nav li{
