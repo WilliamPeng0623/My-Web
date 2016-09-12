@@ -10,8 +10,15 @@
 		<link rel="stylesheet" type="text/css" href="css/page.css"/>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('#pwl_page').fullpage()
-			})
+				$('#pwl_page').fullpage({
+					//绑定菜单
+					anchors:['pwl-page1','pwl-page2','pwl-page3'],
+					menu:'#menu',
+					
+					//导航
+					'navigation':true,
+				});
+			});
 		</script>
 	</head>
 	<body>
@@ -37,7 +44,18 @@
 			</nav>	
 		</header>
 		<div id="pwl_page">
-			<div class="section pwl-page1">1</div>
+			<div class="section pwl-page1">
+				<div id="icon">
+					<img src="images/my.png"/>
+				</div>
+				<p id="page1_text1">人的身高有上限，而人的能力永无止境，渴望不断的进步，把自己变得更高更出色。</p>
+				<div id="textBox" style="width: 800px;">
+					<p id="page1_text2" style="display: block;">我叫彭伟梁</p>
+					<p id="page1_text3" style="display: block;">23岁</p>
+					<p id="page1_text4" style="display: block;">一名追求完美的前端开发者</p>
+					<p id="page1_text5" style="display: block;">PWL641468@icloud.com</p>
+				</div>
+			</div>
 			<div class="section pwl-page2">2</div>
 			<div class="section pwl-page3">3</div>
 		</div>

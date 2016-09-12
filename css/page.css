@@ -1,13 +1,41 @@
 
 .pwl-page1{
-	background-color: saddlebrown;
 		background: url(../images/background.jpg);
 }
+div#icon{
+	height: 180px;
+	text-align: center;
+}
+div#icon img{
+	-webkit-border-radius: 160px 160px;
+	-moz-border-radius: 160px 160px;
+	border-radius: 160px 160px;
+	border: 3px #DCDCDC solid;
+}
+p#page1_text1{
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+	font: 20px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: bold;	
+}
+div#textBox{
+	border-top: 2px solid #666666;
+	margin: 15px auto;
+	text-align: center;
+}
+p#page1_text2,
+p#page1_text3,
+p#page1_text4,
+p#page1_text5{
+		
+	font: 14px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
 .pwl-page2{
-	background-color: seagreen;
 		background: url(../images/background.jpg);
 }
 .pwl-page3{
-	background-color: wheat;
 		background: url(../images/background.jpg);
 }
