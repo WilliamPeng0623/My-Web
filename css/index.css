@@ -16,6 +16,29 @@ body{
 	padding: 0;
 	height: 100%;
 }
+h1 {
+	width: 150px;
+	margin: 10px auto;
+	font-size: 32px;
+	font-weight: bold;
+}
+h2 {
+	font-family: "allerbold";
+	font-weight: bold;
+	color: #f00;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+h3{
+	margin: 20px auto;
+	text-align: center;
+}
+.title {
+	text-align: center;
+	margin-top: 100px;
+	width: 100%;
+	height: 60px;
+}
 
 /*header*/
 header#header{
@@ -47,7 +70,7 @@ header#header{
 	float: left;
 }
 
-/*logo—class*/
+/*logoâ€”Âclass*/
 #web_Class{
 	float: left;
 	margin-left: 15px;

@@ -1,0 +1,115 @@
+.pwl-page2{
+		background: url(../images/background.jpg);
+}
+#about{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+#about_content{
+	height: 510px;
+}
+
+.title{
+	text-align: center;
+	margin-top: 100px;
+	width: 100%;
+	height: 60px;
+}
+.title_Me{
+	width: 0;
+	margin: 3px auto;
+	padding: 5px 0;
+	border-top: 2px solid #f00;
+}
+
+#about_list_content{
+	margin: 50px auto;
+	width: 800px;
+	height: 150px;
+	padding: 20px 0;
+	border-radius: 30px;
+	background: #a0a0b4;
+}
+#about_list1{
+	margin-left: 60px;
+}
+.about_list{
+	float: left;
+	margin-left: 120px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+}
+.about_list_style{	
+	width: 80px;
+	height: 80px;
+	box-shadow: 0 0 0 4px rgba(255,255,255,1);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+	color: #fff;
+	-webkit-transition: background 1s,color 1s,box-shadow 1s;
+	-moz-transition: background 1s,color 1s,box-shadow 1s;
+	-ms-transition: background 1s,color 1s,box-shadow 1s;
+	-o-transition: background 1s,color 1s,box-shadow 1s;
+	transition: background 1s,color 1s,box-shadow 1s;
+}
+.about_list_style:before{
+	display: block;
+	line-height: 130px;
+	text-align: center;
+}
+#about_text_xueli,
+#about_text_age,
+#about_text_zuobiao,
+#about_text_zhuangtai{
+	margin-top: 15px;
+}
+
+#about_list_xueli:before{
+	content: url(../images/xueli.png);
+	
+}
+#about_list_age:before{
+	content: url(../images/nianling.png);
+	
+}
+#about_list_zuobiao:before{
+	content: url(../images/zuobiao.png);
+	
+}
+#about_list_zhuangtai:before{
+	content: url(../images/zhuangtai.png);
+	
+}
+
+#about_list_text{
+	padding-top: 20px;
+	line-height: 20px;
+	position: relative;	
+	
+}
+
+.about_list_text p:before{
+	display: block;
+	content: '';
+	position: absolute;
+	background: #ccc;
+	height: 2px;
+	width: 90px;
+	bottom: 165px;
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+.about_list_text p{
+	/* padding-left: 10px; */
+	padding-top: 5px;
+	text-align: right;
+	font-size: 14px;
+}

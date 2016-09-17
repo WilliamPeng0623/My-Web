@@ -7,7 +7,9 @@
 		<script src="tools/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="tools/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="tools/jquery.fullPage.css"/>
-		<link rel="stylesheet" type="text/css" href="css/page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/page3.css"/>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('#pwl_page').fullpage({
@@ -30,7 +32,7 @@
 			<div id="logo"></div>
 			<!--class-->
 			<div id="web_Class">
-				<p id="class_c1">pwl</p>
+				<p id="class_c1">PwL</p>
 				<p id="class_c2">个人简历</p>
 			</div>
 			<!--导航栏导航-->
@@ -44,6 +46,7 @@
 			</nav>	
 		</header>
 		<div id="pwl_page">
+			<!--简介-->
 			<div class="section pwl-page1">
 				<div id="icon">
 					<img src="images/my.png"/>
@@ -56,7 +59,37 @@
 					<p id="page1_text5" style="display: block;">PWL641468@icloud.com</p>
 				</div>
 			</div>
-			<div class="section pwl-page2">2</div>
+			<!--个人信息-->
+			<div class="section pwl-page2">
+				<div id="about">
+					<div id="about_content" style="padding-top: 68px;">
+						<div class="title">
+							<h1>关于我</h1>
+							<div class="title_Me" style="width: 130px;">
+								<h2 style="display: block;">- about me -</h2>
+							</div>
+						</div>
+						<div id="about_list_content">
+							<div class="about_list" id="about_list1">
+								<div class="about_list_style" id="about_list_xueli">	</div>
+								<div class="about_list_text" id="about_text_xueli">学历<p>大专</p></div>
+							</div>
+							<div class="about_list">
+								<div class="about_list_style" id="about_list_age"></div>
+								<div class="about_list_text" id="about_text_age">年龄<p>23岁</p></div>
+							</div>
+							<div class="about_list">
+								<div class="about_list_style" id="about_list_zuobiao"></div>
+								<div class="about_list_text" id="about_text_zuobiao">坐标<p>广州</p></div>
+							</div>
+							<div class="about_list">
+								<div class="about_list_style" id="about_list_zhuangtai"></div>
+								<div class="about_list_text" id="about_text_zhuangtai">状态<p>离职</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="section pwl-page3">3</div>
 		</div>
 	</body>
