@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<script src="tools/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script src="tools/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
-		<link rel="stylesheet" type="text/css" href="tools/jquery.fullPage.css"/>
-		<link rel="stylesheet" type="text/css" href="css/page1.css"/>
-		<link rel="stylesheet" type="text/css" href="css/page2.css"/>
-		<link rel="stylesheet" type="text/css" href="css/page3.css"/>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('#pwl_page').fullpage({
-					//绑定菜单
-					anchors:['pwl-page1','pwl-page2','pwl-page3'],
-					menu:'#menu',
-					
-					//导航
-					'navigation':true,
-				});
-			});
-		</script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="tools/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="tools/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="tools/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/page1.css" />
+		<link rel="stylesheet" type="text/css" href="css/page2.css" />
+		<link rel="stylesheet" type="text/css" href="css/page3.css" />
+
 	</head>
+
 	<body>
 		<!--头部-->
 		<!--顶部透明导航栏-->
@@ -38,18 +29,26 @@
 			<!--导航栏导航-->
 			<nav id="nav">
 				<ul>
-					<li><a href="#">首页</a></li>
-					<li><a href="#">随笔</a></li>
-					<li><a href="#">积淀</a></li>
-					<li><a href="#">关于</a></li>
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">随笔</a>
+					</li>
+					<li>
+						<a href="#">积淀</a>
+					</li>
+					<li>
+						<a href="#">关于</a>
+					</li>
 				</ul>
-			</nav>	
+			</nav>
 		</header>
 		<div id="pwl_page">
 			<!--简介-->
 			<div class="section pwl-page1">
 				<div id="icon">
-					<img src="images/my.png"/>
+					<img src="images/my.png" />
 				</div>
 				<p id="page1_text1">人的身高有上限，而人的能力永无止境，渴望不断的进步，把自己变得更高更出色。</p>
 				<div id="textBox" style="width: 800px;">
@@ -71,26 +70,214 @@
 						</div>
 						<div id="about_list_content">
 							<div class="about_list" id="about_list1">
-								<div class="about_list_style" id="about_list_xueli">	</div>
-								<div class="about_list_text" id="about_text_xueli">学历<p id="skewLine"></p><p>大专</p></div>
+								<div class="about_list_style" id="about_list_xueli"> </div>
+								<div class="about_list_text" id="about_text_xueli">学历
+									<p id="skewLine"></p>
+									<p>大专</p>
+								</div>
 							</div>
 							<div class="about_list">
 								<div class="about_list_style" id="about_list_age"></div>
-								<div class="about_list_text" id="about_text_age">年龄<p id="skewLine"></p><p>23岁</p></div>
+								<div class="about_list_text" id="about_text_age">年龄
+									<p id="skewLine"></p>
+									<p>23岁</p>
+								</div>
 							</div>
 							<div class="about_list">
 								<div class="about_list_style" id="about_list_zuobiao"></div>
-								<div class="about_list_text" id="about_text_zuobiao">坐标<p id="skewLine"></p><p>广州</p></div>
+								<div class="about_list_text" id="about_text_zuobiao">坐标
+									<p id="skewLine"></p>
+									<p>广州</p>
+								</div>
 							</div>
 							<div class="about_list">
 								<div class="about_list_style" id="about_list_zhuangtai"></div>
-								<div class="about_list_text" id="about_text_zhuangtai">状态<p id="skewLine"></p><p>离职</p></div>
+								<div class="about_list_text" id="about_text_zhuangtai">状态
+									<p id="skewLine"></p>
+									<p>离职</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section pwl-page3">3</div>
+			<!--专业技能-->
+			<div class="section pwl-page3">
+				<div id="skill">
+					<div id="skill_content">
+						<div class="title">
+							<h1>专业技能</h1>
+							<div class="title_Me" style="width: 130px;">
+								<h2 style="display: block;">- skill -</h2>
+							</div>
+							<div id="skill_text">
+								<p>前端的学习需要持之以恒，知识深度与广度都很重要。而前端开发的重中之重就是原生javascript的理解，而如今的思路必需有模块化，组件化，工程化</p>
+							</div>
+							<div id="skill_list">
+								<div class="skill_list_content skill_scale" id="skill_list1">
+									<div id="skill_icon1" class="skill_icon"></div>
+									<div id="skill_flag1" class="skill_flag"></div>
+									<div id="skill_show1" style="display: none;">
+										<div id="html" class="icon_pic md-trigger" data-modal="modal-1">
+											<img src="images/button1.png" alt="" />
+										</div>
+										<div id="css" class="icon_pic md-trigger" data-modal="modal-2">
+											<img src="images/button2.png" alt="" /></div>
+										<div id="js" class="icon_pic md-trigger" data-modal="modal-3">
+											<img src="images/button3.png" alt="" /></div>
+										<div id="kuangjia" class="icon_pic md-trigger" data-modal="modal-4">
+											<img src="images/button4.png" alt="" /></div>
+									</div>
+								</div>
+
+								<div class="skill_list_content skill_scale" id="skill_list2">
+									<div id="skill_icon2" class="skill_icon"></div>
+									<div id="skill_flag2" class="skill_flag"></div>
+									<div id="skill_show2" style="display: none;">
+										<div id="ios" class="icon_pic md-trigger" data-modal="modal-5">
+											<img src="images/button5.png" alt="" /></div>
+									</div>
+								</div>
+
+								<div class="skill_list_content skill_scale" id="skill_list3">
+									<div id="skill_icon3" class="skill_icon"></div>
+									<div id="skill_flag3" class="skill_flag"></div>
+									<div id="skill_show3" style="display: none;">
+										<div id="tupianchuli" class="icon_pic md-trigger" data-modal="modal-6">
+											<img src="images/button6.png" alt="" /></div>
+										<div id="qietu" class="icon_pic md-trigger" data-modal="modal-7">
+											<img src="images/button7.png" alt="" /></div>
+										<div id="bianjiqi" class="icon_pic md-trigger" data-modal="modal-8">
+											<img src="images/button8.png" alt="" /></div>
+										<div id="banbenguanli" class="icon_pic md-trigger" data-modal="modal-9">
+											<img src="images/button9.png" alt="" /></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--工作经历-->
+			<div class="section pwl-page4">4</div>
 		</div>
+		<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content md-content1">
+				<h3>HTML</h3>
+				<ul>
+					<li>深刻理解Web/W3C标准</li>
+					<li>熟练运用HTML和HTML5标签</li>
+					<li>熟悉HTML和XHTML</li>
+					<li>掌握HTML和HTML5排版布局</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+
+		</div>
+		<div class="md-modal md-effect-2" id="modal-2">
+			<div class="md-content md-content2">
+				<h3>CSS</h3>
+				<ul>
+					<li>熟练运用CSS和CSS3新属性</li>
+					<li>熟悉响应式布局</li>
+					<li>可独立解决浏览器兼容问题</li>
+					<li>注重页面视觉效果和用户交互效果</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-3" id="modal-3">
+			<div class="md-content md-content3">
+				<h3>JavaScript</h3>
+				<ul>
+					<li>掌握原生JavaScript</li>
+					<li>掌握jQuery</li>
+					<li>了解jQueryUI,jQuery easyUI等类库</li>
+					<li>掌握Ajax异步</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-4" id="modal-4">
+			<div class="md-content md-content4">
+				<h3>框架</h3>
+				<ul>
+					<li>掌握BootStrap的使用</li>
+					<li>熟悉使用jQueryUI,jQuery easyUI的使用</li>
+					<li>掌握Vue.js的使用</li>
+					<li>了解AngularJS</li>
+					<li>正在学习Ext.js, Node.js以及各种便于开发的js插件</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-5" id="modal-5">
+			<div class="md-content md-content5">
+				<h3>iOS</h3>
+				<ul>
+					<li>熟悉Objective-C编程,了解SWift</li>
+					<li>熟练使用MVC架构设计模式</li>
+					<li>了解面向对象编程</li>
+					<li>熟悉iOS中的Delegate,KVO,block等通讯机制</li>
+					<li>熟悉使用AFNetworking、YYModel、SDWebImage、MBProgressHUD等第三方常用框架</li>
+					<li>熟悉AutoLayout页面布局，实现iOS设备屏幕的适配</li>
+					<li>熟练真机测试，熟悉iOS开发流程、调试方法、账号申请、应用审核等APP上架基本流程</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-6" id="modal-6">
+			<div class="md-content md-content6">
+				<h3>图片处理</h3>
+				<ul>
+					<li>熟悉使用Photoshop图像处理技术</li>
+					<li>熟悉使用Photoshop辅助工具的应用</li>
+					<li>熟悉使用Photoshop绘图与修图工具的基本应用</li>
+					<li>熟悉使用Photoshop绘制与操作选区的方法</li>
+					<li>熟悉使用Photoshop图层与图层样式的应用</li>
+					<li>已考取'图像制作员'’中级职业资格证</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-10" id="modal-7">
+			<div class="md-content md-content7">
+				<h3>切片</h3>
+				<ul>
+					<li>熟悉使用Fireworks进行切片处理</li>
+					<li>熟悉使用Fireworks进行对设计图测量获取页面各种参数</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-8" id="modal-8">
+			<div class="md-content md-content8">
+				<h3>编辑器</h3>
+				<ul>
+					<li>熟悉使用HBuilder进行代码编写</li>
+					<li>熟悉使用Sublime Text进行代码编写</li>
+					<li>熟悉使用WebStrom进行代码编写</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-modal md-effect-9" id="modal-9">
+			<div class="md-content md-content9">
+				<h3>版本管理</h3>
+				<ul>
+					<li>熟悉Git、SVN版本管理工具的使用</li>
+				</ul>
+				<button class="md-close">已了解</button>
+			</div>
+		</div>
+		<div class="md-overlay"></div>
 	</body>
+	<script src="tools/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tools/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tools/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tools/classie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="tools/modalEffects.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
 </html>
